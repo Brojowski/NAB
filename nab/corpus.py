@@ -137,7 +137,7 @@ class Corpus(object):
     def getRelativePath(srcRoot, srcPath):
       return srcPath[srcPath.index(srcRoot)+len(srcRoot):]\
         .strip(os.path.sep).replace(os.path.sep, "/")
-
+absoluteFilePaths
     return {getRelativePath(self.srcRoot, d.srcPath) : d for d in dataSets}
 
 
